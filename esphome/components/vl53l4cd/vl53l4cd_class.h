@@ -41,8 +41,8 @@
 /* Includes ------------------------------------------------------------------*/
 #if USE_ARDUINO
 #include <Arduino.h>
-#endif /* USE_ADRDUINO */
 #include <Wire.h>
+#endif /* USE_ADRDUINO */
 #include "vl53l4cd_api.h"
 
 /* Classes -------------------------------------------------------------------*/
