@@ -4,7 +4,7 @@
 #include "esphome/core/hal.h"
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/i2c/i2c.h"
-#include "stm32duino_VL53L4CD/vl53l4cd_class.h"
+#include "./stm32duino_VL53L4CD/vl53l4cd_class.h"
 
 
 namespace esphome {
