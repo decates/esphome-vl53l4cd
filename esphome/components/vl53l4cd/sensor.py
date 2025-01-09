@@ -53,7 +53,7 @@ CONFIG_SCHEMA = cv.All(
     .extend(
         {
             cv.Optional(CONF_TIMING_BUDGET, default="33ms"): cv.All(
-                cv.string_strict, cv.one_of("15ms", "20ms", "33ms", "50ms", upper=True)
+                cv.string_strict, cv.one_of("15ms", "20ms", "33ms", "50ms", upper=False)
             ),
             # cv.Optional(CONF_MEASUREMENT_INTERVAL): cv.positive_time_period_milliseconds,
             cv.Optional(CONF_ENABLE_PIN): pins.gpio_output_pin_schema,
