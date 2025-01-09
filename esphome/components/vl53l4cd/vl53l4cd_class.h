@@ -39,7 +39,9 @@
 #define __VL53L4CD_CLASS_H
 
 /* Includes ------------------------------------------------------------------*/
+#if USE_ARDUINO
 #include <Arduino.h>
+#endif /* USE_ADRDUINO */
 #include <Wire.h>
 #include "vl53l4cd_api.h"
 
