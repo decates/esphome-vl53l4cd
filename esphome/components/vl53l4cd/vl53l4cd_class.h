@@ -39,8 +39,8 @@
 #define __VL53L4CD_CLASS_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "Arduino.h"
-#include "Wire.h"
+#include <Arduino.h>
+#include <Wire.h>
 #include "vl53l4cd_api.h"
 
 /* Classes -------------------------------------------------------------------*/
