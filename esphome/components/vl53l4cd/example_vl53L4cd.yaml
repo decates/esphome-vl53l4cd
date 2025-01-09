@@ -1,0 +1,36 @@
+esphome:
+  name: vl53l4cd_sensor
+  platform: ESP32
+  board: esp32dev
+
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/your-forked-repo/esphome
+      ref: dev
+    components: [vl53l4cd]
+
+sensor:
+  - platform: vl53l4cd
+    name: "VL53L4CD Distance"
+    update_interval: 1s
+    i2c_address: 0x29
+    long_range: false
+    signal_rate_limit: 0.25
+    enable_pin:
+      number: GPIO16
+      inverted: false
+
+sensor:
+  - platform: vl53l4cd
+    name: "VL53L4CD Distance"
+    address: 0x29
+    enable_pin: GPIO5
+    timing_budget: "33ms"
+    # measurement_interval: 100ms  # Uncomment to use autonomous mode
+    update_interval: 30s
